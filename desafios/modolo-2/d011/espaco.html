@@ -6,23 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Espaço</title>
     <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
         #conteiner{
-            position: absolute;
-            background-image: url();
+            position: relative;
+            height: 100vh;
+            background-image: url(imagens/espaco.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
             background-color: blue;
+            
         }
 
         #conteudo{
-            position: relative;
-            background-color: yellow;
-            width: 100px;
-            height: 100px;
+            position: absolute;
+            background-image: url(imagens/astronauta.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            width: 500px;
+            height: 508px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
         }
 
     </style>
 </head>
-<body id="conteiner">
-      <main id="conteudo">
+<body>
+      <section id="conteiner">
+        <article id="conteudo">
 
-      </main>      
+        </article>
+      </section>      
 </body>
