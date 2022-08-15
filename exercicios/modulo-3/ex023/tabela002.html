@@ -14,6 +14,10 @@
             border-collapse: collapse;
         }
 
+        tbody > tr:nth-child(odd){
+            background-color: lightgrey;
+        }
+
         td,th{
             border: 1px solid black;
             padding: 10px;
@@ -30,10 +34,11 @@
 <body>
     <h1>USO DE TABELA GRANDE</h1>
     <table>
+        <caption>Tabela de população</caption>
         <thead>
             <tr>
-                <th>Estados</th>
-                <th>População</th>
+                <th scope="col">Estados</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -96,7 +101,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <td>População Total</td>
+                <td scope="row">População Total</td>
                 <td class="numero"><strong>210 147 125</strong></td>
             </tr>
         </tfoot>
